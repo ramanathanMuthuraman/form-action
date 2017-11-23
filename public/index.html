@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Periscope&trade;</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <!-- TODO Include a custom build of Modernizr using Modernizr generator. -->
+</head>
+<body>
+<div class="main">
+    <header class="header">
+        <h1 class="title">JukeBox</h1>
+    </header>
+    <form id="theForm" class="form-container" autocomplete="off">
+            <span><label for="song-url">Enter song URL</label></span>
+            <div class="form-control">
+                <input placeholder="http://" id="song-url" class="input-text" name="song-url" type="text" required>
+                <button id="next" class="next">&gt;</button>
+            </div>
+            <div class="message">
+                <span id="error-message" class="error hide">Error!!</span>
+                <span id="success-message" class="success hide">Success!!</span>
+            </div>
+    </form>
+</div>
+<script type="text/javascript" src="script.js"></script>

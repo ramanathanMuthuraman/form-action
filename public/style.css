@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 20vh;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+.title {
+    color: #195A3E;
+    font-size: 70px;
+}
+
+.main {
+    background: #2dcb89;
+    text-align: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.form-container {
+    text-align: left;
+    font-size: 2.5em;
+    color: #195A3E;
+    width: 100%;
+    height: 80vh;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+.form-control {
+    position: relative;
+    width: 100%;
+}
+
+.input-text {
+    margin: 10px 0;
+    display: block;
+    padding: 0 30px 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: #32B57D;
+    color: #195A3E;
+    font-size: 40px;
+}
+
+.input-text::placeholder {
+    color: #218e5f;
+}
+
+.next {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #195A3E;
+    font-size: 30px;
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.input-text:not(:placeholder-shown) + .next {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.success {
+    color: #195A3E;
+}
+
+.error {
+    color: #ca4e4e;
+}
+
+.error, .success {
+    font-size: 25px;
+}
+
