@@ -21,7 +21,10 @@
         'Content-Type': 'application/json'
       }
     }).then(
-      () => {
+      (response) => {
+        if (!response.ok) {
+          throw Error(response.statusText);
+        }
         hideError();
       }
     ).catch((err) => {
